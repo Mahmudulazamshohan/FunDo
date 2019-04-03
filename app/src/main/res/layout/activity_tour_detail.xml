@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TourDetailActivity"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:expandedTitleTextAppearance="@style/ExpandedTitleText"
+            android:fitsSystemWindows="true"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <android.support.v4.view.ViewPager
+                    app:layout_collapseMode="parallax"
+                    android:id="@+id/imageSliderViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp">
+
+                </android.support.v4.view.ViewPager>
+                <LinearLayout
+                    app:layout_collapseMode="parallax"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-30dp"
+                    android:orientation="horizontal"
+                    >
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/map_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="10dp"
+                        app:fabSize="normal"
+                        app:srcCompat="@drawable/ic_pin_drop_black_24dp"
+                        app:elevation="8dp"
+                        app:background="@drawable/float_button"
+                        app:layout_anchorGravity="bottom|center"
+                        app:backgroundTint="@color/green"
+
+                        />
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/rateBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="10dp"
+                        app:fabSize="normal"
+                        app:srcCompat="@drawable/ic_star_black_24dp"
+                        app:elevation="8dp"
+                        app:background="@drawable/float_button"
+                        app:layout_anchorGravity="bottom|center"
+                        app:backgroundTint="@color/yellow_dark"
+
+                        />
+
+                </LinearLayout>
+                <me.relex.circleindicator.CircleIndicator
+                    app:layout_collapseMode="parallax"
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="-28dp"
+                    android:background="@color/float_button"
+                    android:translationZ="-4dp"
+                    />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_collapseMode="pin"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/tour_details"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/detailsAdsBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

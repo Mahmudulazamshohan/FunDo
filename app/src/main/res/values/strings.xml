@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Travo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_video_view">VideoViewActivity</string>
+    <string name="temp">ঢাকায় ফিরতে শুরু করেছে নগরবাসী</string>
+    <string name="menu_add_fav">View Later</string>
+    <string name="menu_add_hide">Not Interested</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="dhaka">Dhaka</string>
+    <string name="chittagong">Chittagong</string>
+    <string name="rajshahi">Rajshahi</string>
+    <string name="barisal">Barisal</string>
+    <string name="sylhet">Sylhet</string>
+    <string name="rangpur">Rangpur</string>
+    <string name="mymensingh">Mymensingh</string>
+    <string name="khulna">Khulna</string>
+
+    <string name="dhaka_quo">The city of mosque</string>
+    <string name="chittagong_quo">The city of beauty</string>
+    <string name="rajshahi_quo">The city of fruit</string>
+    <string name="barisal_quo">The city of river</string>
+    <string name="sylhet_quo">The city of nature</string>
+    <string name="rangpur_quo">The city of look</string>
+    <string name="mymensingh_quo">The city of exclusive</string>
+    <string name="khulna_quo">The city of unknown</string>
+    <string name="ads_exit_text">Do you want to exit Travo ?</string>
+    <string name="share">Share</string>
+    <string name="setting">Setting</string>
+    <string name="faq">Faq</string>
+    <string name="native_ads">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="title_activity_single_maps">Map</string>
+</resources>

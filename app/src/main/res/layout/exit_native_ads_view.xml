@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/alert_dialog_shape"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_4"
+    >
+  <com.google.android.gms.ads.NativeExpressAdView
+      android:id="@+id/nativeAdview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      ads:adSize="MEDIUM_RECTANGLE"
+      ads:adUnitId="@string/native_ads"
+      >
+
+  </com.google.android.gms.ads.NativeExpressAdView>
+    <TextView
+        android:fontFamily="serif"
+        android:textColor="@color/light_black"
+        android:text="@string/ads_exit_text"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="@dimen/dp_10"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dp_10"
+        >
+        <Button
+            android:id="@+id/cancel_btn"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_add_btn"
+            android:textColor="@color/white_background"
+            />
+        <Button
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/exit_btn"
+            android:text="Exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_comment_btn"
+            android:textColor="@color/white_background"
+            />
+    </LinearLayout>
+</LinearLayout>

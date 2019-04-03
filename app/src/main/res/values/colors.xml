@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8E5DD3</color>
+    <color name="colorPrimaryDark">#8E5DD3</color>
+    <color name="white_background">#ffffff</color>
+    <color name="toolbar">#673ab7</color>
+    <color name="tablayout_textcolor">@color/white_background</color>
+    <color name="grey">#cccccc</color>
+    <color name="float_button">#311b92</color>
+    <color name="light_black">#555555</color>
+    <color name="green">#00C851</color>
+    <color name="light_grey">#eeeeee</color>
+    <color name="yellow_dark">#ffbb33</color>
+</resources>
